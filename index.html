@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Sweets & Bakers - A Tradition of Excellence</title>
+    <style>
+        /* Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #fcf9f2; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+        
+        /* Navigation */
+        header { background-color: #5c3a21; color: #fff; padding: 1.5rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #e8d5c4; }
+
+        /* Hero Section */
+        .hero { background-color: #e8d5c4; text-align: center; padding: 100px 20px; border-bottom: 4px solid #5c3a21; }
+        .hero h1 { font-size: 2.8rem; color: #5c3a21; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: auto; color: #4a2e1a; }
+
+        /* Layout & Typography */
+        section { max-width: 1100px; margin: auto; padding: 70px 20px; }
+        h2 { text-align: center; color: #5c3a21; margin-bottom: 40px; font-size: 2.2rem; position: relative; }
+        h2::after { content: ''; width: 60px; height: 3px; background: #5c3a21; display: block; margin: 10px auto 0; }
+
+        /* Two Column Layout for About & Achievements */
+        .split-section { display: flex; gap: 40px; flex-wrap: wrap; }
+        .split-content { flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .split-content h3 { color: #5c3a21; margin-bottom: 15px; font-size: 1.5rem; }
+        .achievement-list { list-style: none; }
+        .achievement-list li { margin-bottom: 15px; padding-left: 25px; position: relative; font-weight: 500; }
+        .achievement-list li::before { content: '🏆'; position: absolute; left: 0; top: 0; }
+
+        /* Testimonials (Customer Satisfaction) */
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .testimonial-card { background: #fff; padding: 25px; border-left: 5px solid #5c3a21; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); font-style: italic; }
+        .stars { color: #d4af37; font-size: 1.2rem; margin-bottom: 10px; }
+        .customer-name { display: block; margin-top: 15px; font-weight: bold; font-style: normal; text-align: right; color: #5c3a21; }
+
+        /* Menu Grid */
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .menu-item { background: #fff; padding: 25px; border-radius: 8px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .menu-item h3 { color: #5c3a21; margin-bottom: 10px; }
+
+        /* Contact Form */
+        .contact-container { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; width: 100%; }
+        button { background-color: #5c3a21; color: #fff; border: none; padding: 12px; font-size: 1.1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s; font-weight: bold; }
+        button:hover { background-color: #4a2e1a; }
+
+        /* Footer */
+        footer { background-color: #333; color: #fff; text-align: center; padding: 25px; margin-top: 40px; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 15px; }
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Luminous Sweets & Bakers</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reputation">Reputation</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Over 25 Years of Baking Excellence</h1>
+        <p>A reputed cornerstone of Kavali,Nellore dist,Andhra pradesh ,delivering unmatched quality, traditional flavors, and trusted service to generations of happy families.</p>
+    </section>
+
+    <section id="about">
+        <div class="split-section">
+            <div class="split-content">
+                <h3>Our Story</h3>
+                <p>Founded in the heart of Kavali over two decades ago, we started with a simple mission: to provide our community with the highest quality, authentic baked goods and sweets. Today, we are proud to be a highly reputed household name, trusted for every major celebration, festival, and daily craving. Our commitment to premium ingredients and hygiene has never wavered.</p>
+            </div>
+            
+            <div id="reputation" class="split-content">
+                <h3>Our Achievements</h3>
+                <ul class="achievement-list">
+                    <li>Over 25 Years of continuous trusted service in the region.</li>
+                    <li>Voted "Best Local Bakery & Sweet Shop" in Kavali (2023 & 2024).</li>
+                    <li>Successfully catered to over 5,000+ weddings and major events.</li>
+                    <li>Recognized for maintaining a 100% 5-Star Health & Hygiene rating.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" style="background-color: #e8d5c4;">
+        <h2>Customer Satisfaction</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Luminous Sweets & Bakers is an institution here. Their traditional sweets are the best I’ve ever had, and their reputation is well-deserved. They handled our daughter's wedding beautifully."</p>
+                <span class="customer-name">- Ramesh R.</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"We have been ordering our birthday cakes from them for 10 years. Always fresh, always on time, and the staff is incredibly professional. A highly trusted business."</p>
+                <span class="customer-name">- Sunita V.</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"When you want guaranteed quality and taste, you go here. It’s comforting to know we have such a well-reputed, reliable bakery in our town."</p>
+                <span class="customer-name">- Anil K.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>What We Offer</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Signature Sweets</h3>
+                <p>Our famous traditional sweets, made daily using pure ghee and time-tested recipes.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Celebration Cakes</h3>
+                <p>Award-winning custom cakes for weddings, anniversaries, and grand events.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Premium Snacks</h3>
+                <p>Freshly baked breads, puffs, and savories perfect for high tea and gatherings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <p style="text-align: center; margin-bottom: 20px;">Always ready to serve the delicious,mouth-watering,higinically prepared cakes,sweets and snacks.
+    
+            <p style="text-align: center; margin-bottom: 20px;">VISIT OUR REPUTED OUTLET IN KAVALI or DROP A MESSAGE BELOW.
+               
+    
+    
+            </p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" placeholder="Your Email Address" required>
+                <textarea id="message" rows="4" placeholder="How can we assist you today?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Luminous Sweets & Bakers. A Tradition of Excellence. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for form interaction
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert('Thank you, ' + name + '. Your message has been received by our team. We will get back to you shortly.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
